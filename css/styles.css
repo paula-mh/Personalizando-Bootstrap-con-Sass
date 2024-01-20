@@ -1,0 +1,60 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* nav */
+nav#mainNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid transparent;
+}
+
+nav#mainNav a {
+  color: #000 !important;
+}
+
+/* Header */
+header#mainHeader {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background-image: url("../../img/videogame.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    background: transparent !important;
+  }
+}
+
+/* Listado de categorías */
+.categoria-lista i {
+  color: #8800aa;
+}
+
+.categoria-lista .card {
+  height: 100%;
+  margin-top: 5px;
+  color: #8800aa;
+  transition: 0.5s all;
+}
+
+.categoria-lista a {
+  text-decoration: none;
+  color: #000;
+}
+
+.categoria-lista .card:hover {
+  color: #fff;
+  background-color: #8800aa;
+}
+
+.categoria-lista .card:hover i,
+.categoria-lista .card:hover a {
+  color: #fff;
+}
